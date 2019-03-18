@@ -1,15 +1,15 @@
 import React from 'react';
 
-export default class Slide extends React.Component {
+export default class Why extends React.Component {
     constructor (props) {
         super(props)
         
     };
     render () {
         return (
-            <section>
+            <div>
                 
-            </section>
+            </div>
         )
     };
 }

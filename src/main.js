@@ -1,6 +1,7 @@
 import React from 'react';
 import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
 import Footer from './footer';
+import HomePage from './homepage/homepage';
 
 export default class Main extends React.Component {
     constructor (props) {
@@ -28,6 +29,7 @@ export default class Main extends React.Component {
                             </div>
                         </header>
                     </div>
+                    <HomePage />
                     {/* <Route path="/portfolio" component={Portfolio} />
                     <Route path="/advantages" component={Advantages} />
                     <Route path="/schemeofwork" component={SchemeOfWork} />
