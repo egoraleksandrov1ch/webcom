@@ -6,6 +6,11 @@ module.exports = {
 		path: path.join(__dirname, 'output'),
 		filename: 'bundle.js',
 	},
+	devServer: {
+		contentBase: path.resolve(__dirname, "output"),
+		port: 8000,
+		historyApiFallback: true,
+	},
 	module: {
 		rules: [
 			{

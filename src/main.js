@@ -1,5 +1,6 @@
 import React from 'react';
-import {BrowserRouter as Router, Route, Link} from "react-router-dom";
+import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
+import Footer from './footer';
 
 export default class Main extends React.Component {
     constructor (props) {
@@ -12,14 +13,14 @@ export default class Main extends React.Component {
                 <div>
                     <div className='headercomponent'>
                         <header>
-                            <img src='../img/logo.png' />
+                            <img src='./img/logo.png' />
                             <nav>
                                 <Link to='/'>главная</Link>
-                                <Link to='/'>портфолио</Link>
-                                <Link to='/'>преимущества</Link>
-                                <Link to='/'>схема работы</Link>
-                                <Link to='/'>отзывы</Link>
-                                <Link to='/'>контакты</Link>
+                                <Link to='/portfolio'>портфолио</Link>
+                                <Link to='/advantages'>преимущества</Link>
+                                <Link to='/schemeofwork'>схема работы</Link>
+                                <Link to='/reviews'>отзывы</Link>
+                                <Link to='/contacts'>контакты</Link>
                             </nav>
                             <div className='number'>
                                 <a href='+375291234567'>+375 (29) 123-45-67</a><br/>
@@ -27,6 +28,12 @@ export default class Main extends React.Component {
                             </div>
                         </header>
                     </div>
+                    {/* <Route path="/portfolio" component={Portfolio} />
+                    <Route path="/advantages" component={Advantages} />
+                    <Route path="/schemeofwork" component={SchemeOfWork} />
+                    <Route path="/reviews" component={Reviews} />
+                    <Route path="/contacts" component={Contacts} /> */}
+                    <Footer />
                 </div>
             </Router>
         )
