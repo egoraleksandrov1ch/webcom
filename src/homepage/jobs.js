@@ -7,6 +7,8 @@ export default class Jobs extends React.Component {
         super(props)
         this.state = {
             works: null,
+            number1: 6,
+            number2: 0,
         };    
         this.nextJobs = this.nextJobs.bind(this);
     };
@@ -16,8 +18,11 @@ export default class Jobs extends React.Component {
             this.setState({works: res}, () => console.log(this.state.works));
         });
     };
-    nextJobs () {
-        
+    nextJobs (index) {
+        // this.setState({
+        //     number1: index,
+        //     number2: index - 6,
+        // });
     };
     render () {
         let job;
@@ -28,19 +33,22 @@ export default class Jobs extends React.Component {
                     return (
                         <div 
                             key={index}
-                            onClick={this.nextJobs}
+                            onClick={this.nextJobs(index)}
                             className='ellipsee'
+                            id={index}
                         ></div>
                     )
                 }
             });
             job = this.state.works.map( (work, index) => {
-                return (
-                    <Job 
-                        key={index}
-                        work={work}
-                    />
-                )
+                if (index < this.state.number1 && index >= this.state.number2) {
+                    return (
+                        <Job 
+                            key={index}
+                            work={work}
+                        />
+                    )
+                }
             });
         }
         return (

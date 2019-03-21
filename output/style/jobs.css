@@ -4,6 +4,7 @@
     background-color: #f9fafa;
     background-image: url('../img/fon2.png');
     position: relative;
+    padding-bottom: 22px;
 }
 
 .jobstext {
@@ -51,6 +52,9 @@
     position: relative;
     cursor: pointer;
 }
+.ourjob:hover .info {
+    display: block;
+}
 
 /* изменить при наличии настоящий картинок  */
 .ourjob>img {
@@ -67,6 +71,7 @@
     position: absolute;
     bottom: 0;
     left: 0;
+    display: none;
 }
 
 .info h6 {

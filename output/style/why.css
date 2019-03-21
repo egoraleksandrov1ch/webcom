@@ -1,0 +1,45 @@
+.why {
+    width: 100%;
+    height: auto;
+    background-color: white;
+}
+.whycomponent {
+    width: 1398px;
+    margin: 0 auto;
+}
+
+.whycomponent h1 {
+    font-size: 33px;
+    font-weight: 400;
+    color: black;
+    text-align: center;
+    letter-spacing: 10px;
+    line-height: 33px;
+    padding-top: 54px;
+}
+.whycomponent img {
+    margin: 27px auto 0;
+    display: block;
+}
+.whycomponent>p {
+    font-size: 17px;
+    font-weight: 400;
+    color: #8198a0;
+    margin: 27px auto 0;
+    text-align: center;
+    width: 820px;
+    line-height: 35px;
+}
+
+.advantages {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 62px; 
+}
+.advantage {
+    width: 300px;
+    text-align: center;
+}
