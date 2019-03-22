@@ -23,7 +23,7 @@ export default class Why extends React.Component {
                                 преимущество 1
                             </h4>
                             <p>
-                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                                Sed ut perspiciatis unde omnis iste<br/> natus error sit voluptatem<br/> accusantium
                             </p>
                         </div>
                         <div className='advantage'>
@@ -32,7 +32,7 @@ export default class Why extends React.Component {
                                 преимущество 2
                             </h4>
                             <p>
-                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                                Sed ut perspiciatis unde omnis iste<br/> natus error sit voluptatem<br/> accusantium
                             </p>
                         </div>
                         <div className='advantage'>
@@ -41,7 +41,7 @@ export default class Why extends React.Component {
                                 преимущество 3
                             </h4>
                             <p>
-                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                                Sed ut perspiciatis unde omnis iste<br/> natus error sit voluptatem<br/> accusantium
                             </p>
                         </div>
                         <div className='advantage'>
@@ -50,7 +50,7 @@ export default class Why extends React.Component {
                                 преимущество 4
                             </h4>
                             <p>
-                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                                Sed ut perspiciatis unde omnis iste<br/> natus error sit voluptatem<br/> accusantium
                             </p>
                         </div>
                         <div className='advantage'>
@@ -59,7 +59,7 @@ export default class Why extends React.Component {
                                 преимущество 5
                             </h4>
                             <p>
-                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                                Sed ut perspiciatis unde omnis iste<br/> natus error sit voluptatem<br/> accusantium
                             </p>
                         </div>
                         <div className='advantage'>
@@ -68,7 +68,7 @@ export default class Why extends React.Component {
                                 преимущество 6
                             </h4>
                             <p>
-                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                                Sed ut perspiciatis unde omnis iste<br/> natus error sit voluptatem<br/> accusantium
                             </p>
                         </div>
                         <div className='advantage'>
@@ -77,7 +77,7 @@ export default class Why extends React.Component {
                                 преимущество 7
                             </h4>
                             <p>
-                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                                Sed ut perspiciatis unde omnis iste<br/> natus error sit voluptatem<br/> accusantium
                             </p>
                         </div>
                         <div className='advantage'>
@@ -86,7 +86,7 @@ export default class Why extends React.Component {
                                 преимущество 8
                             </h4>
                             <p>
-                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                                Sed ut perspiciatis unde omnis iste<br/> natus error sit voluptatem<br/> accusantium    
                             </p>
                         </div>
                     </div>
