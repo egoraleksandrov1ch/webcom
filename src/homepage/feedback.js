@@ -127,13 +127,15 @@ export default class Feedback extends React.Component {
                                 <input 
                                     type='submit'
                                     value='ОТПРАВИТЬ'
+                                    disabled    // убрать     
+                                    
                                 />
                             </form>
                         </div>
                     </div>
-                    <button>
+                    <a href='#'>
                         <img src='./img/arrow.png' />
-                    </button>
+                    </a>
                 </div>
             </section>
         )
