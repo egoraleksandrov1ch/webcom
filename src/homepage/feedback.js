@@ -113,22 +113,27 @@ export default class Feedback extends React.Component {
                                     value={this.state.feedback}
                                     onChange={this.feedback}
                                     rows='5'
-                                    style={{resize:'none',}}
                                 ></textarea>
-                                <input 
-                                    id='photo'
-                                    name='photo'
-                                    type='file'
-                                    accept='image/jpeg, image/png'
-                                />
-                                <label for='photo'>
+                                <label className='file'>
+                                    +
+                                    <input 
+                                        id='photo'
+                                        name='photo'
+                                        type='file'
+                                        accept='image/jpeg, image/png'
+                                    />
+                                </label>
+                                <label 
+                                    for='photo'
+                                    className='photo'
+                                >
                                     ФОТО
                                 </label>
                                 <input 
+                                    className='send'
                                     type='submit'
                                     value='ОТПРАВИТЬ'
                                     disabled    // убрать     
-                                    
                                 />
                             </form>
                         </div>
