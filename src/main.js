@@ -6,7 +6,9 @@ import HomePage from './homepage/homepage';
 export default class Main extends React.Component {
     constructor (props) {
         super(props)
-        
+        this.state = {
+
+        };
     };
     render () {
         return (
