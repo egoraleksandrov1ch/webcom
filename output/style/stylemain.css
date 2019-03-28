@@ -10,6 +10,7 @@ head, body {
 
 .headercomponent {
     width: 100%;
+    min-width: 1440px;
     height: 120px;
     background-color: #28363d;
     top: 0;
@@ -32,7 +33,7 @@ nav {
 }
 nav a {
     width: 140px;
-    display: inline;
+    display: inline-block;
     margin-right: 20px;
     color: white;
     font-size: 15px;
@@ -62,7 +63,6 @@ nav a:hover {
     text-decoration: none;
     line-height: 20px;
     display: inline-block;
-    float: right;
 }
 .number a:first-child {
     padding-bottom: 20px;
@@ -78,6 +78,7 @@ nav a:hover {
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    margin-right: 10px;
 }
 .requestBtn span {
     font-size: 16px;
@@ -85,3 +86,30 @@ nav a:hover {
     font-weight: 400;
     color: #ff8207;
 }
+
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .headercomponent {
+        min-width: 1024px;
+    }
+    header {
+        width: auto;
+    }
+    header>img {
+        margin-left: 10px;
+    }
+    nav a {
+        width: auto;
+    }
+    .number {
+        width: auto;
+        margin-right: 10px;
+    }
+    .number a {
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 425px) and (max-width: 768px) {
+    
+}   

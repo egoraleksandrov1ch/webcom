@@ -64,13 +64,13 @@ export default class Main extends React.Component {
                             {numbOrBtn}
                         </header>
                     </div>
-                    <Route exact path="/" component={HomePage} />
+                    {/* <Route exact path="/" component={HomePage} /> */}
                     <Route path="/portfolio" component={Portfolio} />
                     {/* <Route path="/advantages" component={Advantages} />
                     <Route path="/schemeofwork" component={SchemeOfWork} />
                     <Route path="/reviews" component={Reviews} />
                     <Route path="/contacts" component={Contacts} /> */}
-                    <Footer />
+                    {/* <Footer /> */}
                 </div>
             </Router>
         )
