@@ -15,7 +15,7 @@ export default class Main extends React.Component {
     scrollPage () {
         this.setState( {
             offTop: document.body.scrollTop || document.documentElement.scrollTop
-        }, () => console.log(this.state.offTop));
+        });
     };
     componentDidMount(){
         window.addEventListener('scroll',this.scrollPage);
@@ -26,15 +26,21 @@ export default class Main extends React.Component {
     render () {
         let numbOrBtn;
         let hieghtNav;
-        if (this.state.offTop == 0) {
+        let pos;
+        let hieghtLink;
+        if (this.state.offTop <= 1) {
             hieghtNav = '120px';
+            pos = '';
+            hieghtLink = '50px';
             numbOrBtn = <div className='number'>
                 <a href='+375291234567'>+375 (29) 123-45-67</a><br/>
                 <a href='+375331234567'>+375 (33) 123-45-67</a>
             </div>;
         }
-        else if (this.state.offTop !== 0) {
+        else if (this.state.offTop > 1) {
             hieghtNav = '80px';
+            pos = 'fixed';
+            hieghtLink = '30px';
             numbOrBtn = <div className='requestBtn'>
                 <span>
                     ОФОРМИТЬ ЗАЯВКУ
@@ -44,16 +50,16 @@ export default class Main extends React.Component {
         return (
             <Router>
                 <div>
-                    <div className='headercomponent' style={ {height: hieghtNav} }>
+                    <div className='headercomponent' style={ {height: hieghtNav, position: pos} }>
                         <header>
                             <img src='./img/logo.png' />
                             <nav>
-                                <Link to='/'>главная</Link>
-                                <Link to='/portfolio'>портфолио</Link>
-                                <Link to='/advantages'>преимущества</Link>
-                                <Link to='/schemeofwork'>схема работы</Link>
-                                <Link to='/reviews'>отзывы</Link>
-                                <Link to='/contacts'>контакты</Link>
+                                <Link style={ {paddingTop: hieghtLink} } to='/'>главная</Link>
+                                <Link style={ {paddingTop: hieghtLink} } to='/portfolio'>портфолио</Link>
+                                <Link style={ {paddingTop: hieghtLink} } to='/advantages'>преимущества</Link>
+                                <Link style={ {paddingTop: hieghtLink} } to='/schemeofwork'>схема работы</Link>
+                                <Link style={ {paddingTop: hieghtLink} } to='/reviews'>отзывы</Link>
+                                <Link style={ {paddingTop: hieghtLink} } to='/contacts'>контакты</Link>
                             </nav>
                             {numbOrBtn}
                         </header>
