@@ -91,7 +91,7 @@ nav a:hover {
 }
 
 
-@media screen  and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
     .headercomponent {
         min-width: 1024px;
     }
@@ -119,6 +119,7 @@ nav a:hover {
     }
     header {
         position: relative;
+        width: auto;
     }
     header img {
         margin-left: 70px;
@@ -165,3 +166,57 @@ nav a:hover {
         display: none;
     }
 }   
+@media screen and (max-width: 425px) {
+    .headercomponent {
+        min-width: 425px;
+        max-width: 320px;
+    }
+    header {
+        position: relative;
+        width: auto;
+    }
+    header img {
+        margin-left: 10px;
+    }
+    .fa-align-justify {
+        display: block;
+        color: white;
+        margin: 30px;
+        font-size: 50px;
+        cursor: pointer;
+    }
+    .fa-align-justify:hover, nav {
+        display: flex;
+    }
+    nav {
+        position: absolute;
+        z-index: 10;
+        right: 10px;
+        top: 10px;
+        background-color: #28363d;
+        width: 230px;
+        border: 1px solid orange;
+        border-radius: 10px;
+        flex-direction: column;
+        align-content: center;
+        justify-items: center;
+        height: auto;
+        display: none;
+    }
+    nav a {
+        padding: 30px 0 30px;
+        display: block;
+        width: 100%;
+        margin: 0;
+    }
+    nav a:hover {
+        border: 2px solid #ff8207;
+        border-radius: 10px;
+    }
+    .number {
+        display: none;
+    }
+    .requestBtn {
+        display: none;
+    }
+}

@@ -15,9 +15,11 @@ export default class Main extends React.Component {
         this.openMenu = this.openMenu.bind(this);
     };
     openMenu () {
-        this.setState( {
-            menu: !this.state.menu,
-        });
+        if (window.innerWidth <= 768 ) {
+            this.setState( {
+                menu: !this.state.menu,
+            });
+        }
     };
     scrollPage () {
         this.setState( {
@@ -26,6 +28,11 @@ export default class Main extends React.Component {
     };
     componentDidMount(){
         window.addEventListener('scroll',this.scrollPage);
+        if (window.innerWidth > 768) {
+            this.setState( {
+                menu: !this.state.menu,
+            });
+        }
     };
     componentWillUnmount(){
         window.removeEventListener('scroll',this.scrollPage);
@@ -56,7 +63,7 @@ export default class Main extends React.Component {
         return (
             <Router>
                 <div>
-                    <div className='headercomponent' style={ {height: hieghtNav, position: pos} }>
+                    {/* <div className='headercomponent' style={ {height: hieghtNav, position: pos} }>
                         <header>
                             <img src='./img/logo.png' />
                             <nav style={ {display:this.state.menu ? 'none' : 'flex'} }>
@@ -70,14 +77,14 @@ export default class Main extends React.Component {
                             {numbOrBtn}
                             <i className="fas fa-align-justify" onClick={this.openMenu}></i>
                         </header>
-                    </div>
+                    </div> */}
                     {/* <Route exact path="/" component={HomePage} /> */}
-                    <Route path="/portfolio" component={Portfolio} />
+                    {/* <Route path="/portfolio" component={Portfolio} /> */}
                     {/* <Route path="/advantages" component={Advantages} />
                     <Route path="/schemeofwork" component={SchemeOfWork} />
                     <Route path="/reviews" component={Reviews} />
                     <Route path="/contacts" component={Contacts} /> */}
-                    {/* <Footer /> */}
+                    <Footer />
                 </div>
             </Router>
         )
