@@ -1,6 +1,7 @@
 .slide {
     background-image: url('../img/fon1.png');
-    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
     background-attachment: fixed;
     width: 100%;
     height: 100%;
@@ -93,4 +94,48 @@ div.ellipsefour {
 
 .slidesection>img {
     cursor: pointer;
+}
+
+@media screen and (max-width: 1440px) {
+    .slide {
+        background-size: auto;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .slidesection {
+        width: auto;
+        
+    }
+}
+@media screen and (max-width: 768px) {
+    .slidesection>img {
+        display: none;
+    }
+    .centerslide {
+        width: 100%;
+        text-align: center;
+    }
+    .centerslide h1 {
+        font-size: 25px;
+    }
+    .centerslide p {
+        width: auto;
+    }
+    .centerslide img {
+        display: none;
+    }
+    .ellipse {
+        margin-bottom: 20px;
+    }
+    .btndown {
+        display: none;
+    }
+}
+@media screen and (max-width: 320px) { 
+    .centerslide h1 {
+        font-size: 20px;
+    }
+    .centerslide p {
+        font-size: 16px;
+    }
 }

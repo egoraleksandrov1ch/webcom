@@ -13,9 +13,9 @@ export default class HomePage extends React.Component {
         return (           
             <main>
                 <Slide />
-                <Jobs />
+                {/* <Jobs />
                 <Why />
-                <Feedback />
+                <Feedback /> */}
             </main>
         )
     };

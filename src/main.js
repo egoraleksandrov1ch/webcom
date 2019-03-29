@@ -52,7 +52,7 @@ export default class Main extends React.Component {
         }
         else if (this.state.offTop > 1) {
             hieghtNav = '80px';
-            pos = 'fixed';
+            // pos = 'fixed';
             hieghtLink = '30px';
             numbOrBtn = <div className='requestBtn'>
                 <span>
@@ -63,7 +63,7 @@ export default class Main extends React.Component {
         return (
             <Router>
                 <div>
-                    {/* <div className='headercomponent' style={ {height: hieghtNav, position: pos} }>
+                    <div className='headercomponent' style={ {height: hieghtNav, position: pos} }>
                         <header>
                             <img src='./img/logo.png' />
                             <nav style={ {display:this.state.menu ? 'none' : 'flex'} }>
@@ -77,9 +77,9 @@ export default class Main extends React.Component {
                             {numbOrBtn}
                             <i className="fas fa-align-justify" onClick={this.openMenu}></i>
                         </header>
-                    </div> */}
-                    {/* <Route exact path="/" component={HomePage} /> */}
-                    {/* <Route path="/portfolio" component={Portfolio} /> */}
+                    </div>
+                    <Route exact path="/" component={HomePage} />
+                    <Route path="/portfolio" component={Portfolio} />
                     {/* <Route path="/advantages" component={Advantages} />
                     <Route path="/schemeofwork" component={SchemeOfWork} />
                     <Route path="/reviews" component={Reviews} />
