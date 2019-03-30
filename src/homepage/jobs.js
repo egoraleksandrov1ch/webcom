@@ -26,20 +26,7 @@ export default class Jobs extends React.Component {
     };
     render () {
         let job;
-        let ellipse;
         if (this.state.works !== null) {
-            ellipse = this.state.works.map( (work, index) => {
-                if(index % 6 == 0) {
-                    return (
-                        <div 
-                            key={index}
-                            onClick={this.nextJobs(index)}
-                            className='ellipsee'
-                            id={index}
-                        ></div>
-                    )
-                }
-            });
             job = this.state.works.map( (work, index) => {
                 if (index < this.state.number1 && index >= this.state.number2) {
                     return (
@@ -61,9 +48,6 @@ export default class Jobs extends React.Component {
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.
                     </p>
-                </div>
-                <div className='ellipsejobs'>
-                    {ellipse}
                 </div>
                 <div className='ourjobs'>
                     {job}

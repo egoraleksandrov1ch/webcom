@@ -52,7 +52,7 @@ export default class Main extends React.Component {
         }
         else if (this.state.offTop > 1) {
             hieghtNav = '80px';
-            // pos = 'fixed';
+            pos = 'fixed';
             hieghtLink = '30px';
             numbOrBtn = <div className='requestBtn'>
                 <span>
